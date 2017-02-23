@@ -10,7 +10,7 @@ public class AppTest {
 
     public static void main(String[] args) {
         String clientId = "wRA7VbWi9bfyoszVUBF0";//애플리케이션 클라이언트 아이디값";
-        String clientSecret = "gyuAOlFhfB";//애플리케이션 클라이언트 시크릿값";;
+        String clientSecret = "gyuAOlFhfB";//애플리케이션 클라이언트 시크릿값";;;
         try {
             String text = URLEncoder.encode("그린팩토리", "UTF-8");
             String apiURL = "https://openapi.naver.com/v1/search/blog?query="+ text; // json 결과
