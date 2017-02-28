@@ -6,6 +6,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLEncoder;
 
+
 public class AppTest {
 
     public static void main(String[] args) {
@@ -13,8 +14,8 @@ public class AppTest {
         String clientSecret = "gyuAOlFhfB";//애플리케이션 클라이언트 시크릿값";;;
         try {
             String text = URLEncoder.encode("그린팩토리", "UTF-8");
-            String apiURL = "https://openapi.naver.com/v1/search/blog?query="+ text; // json 결과
-            //String apiURL = "https://openapi.naver.com/v1/search/blog.xml?query="+ text; // xml 결과
+//            String apiURL = "https://openapi.naver.com/v1/search/blog?query="+ text; // json 결과
+            String apiURL = "https://openapi.naver.com/v1/search/blog.xml?query="+ text; // xml 결과
             URL url = new URL(apiURL);
             HttpURLConnection con = (HttpURLConnection)url.openConnection();
             con.setRequestMethod("GET");
